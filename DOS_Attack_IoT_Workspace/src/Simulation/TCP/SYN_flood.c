@@ -26,14 +26,18 @@ static PSOCKETADDRESS sockAddr = NULL;
 
 void syn_flood()
 {
-	if (!sockAddr)
+	
+	/*if (!sockAddr)
 	{
 		sockAddr = calloc(1, sizeof * sockAddr);
-		sockAddr->ip = DEVICE_NWADDRESS(target_node, 1);
-
+	sockAddr->ip = DEVICE_NWADDRESS(target_node, 1);
+	
 	}
 	
-	PNETSIM_SOCKET s = get_Remotesocket(malicious_node, sockAddr);
+	PNETSIM_SOCKET s = get_Remotesocket(malicious_node, sockAddr);*/
+	extern PSOCKETADDRESS anySocketAddr;
+	anySocketAddr->ip = DEVICE_NWADDRESS(target_node, 1);
+	PNETSIM_SOCKET s = get_Remotesocket(malicious_node, anySocketAddr);
 	ptrSOCKETINTERFACE sId = (ptrSOCKETINTERFACE)pstruEventDetails->szOtherDetails;
 	NetSim_EVENTDETAILS pevent;
 	if (!s)
