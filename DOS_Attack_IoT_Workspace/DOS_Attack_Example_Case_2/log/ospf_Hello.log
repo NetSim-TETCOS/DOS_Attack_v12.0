@@ -1,0 +1,264 @@
+Starting interval hello timer for router 3-2 at time 0.000000
+Starting interval hello timer for router 5-1 at time 0.000000
+Scheduling next interval hello timer for router 3-2 at time 0.000000
+Time 0.0000, Router 3, interface 2 (11.2.1.1) is sending hello msg
+Adding neighbor to hello message
+0 neighbor is added out of 0
+
+
+Scheduling next interval hello timer for router 5-1 at time 0.000000
+Time 0.0000, Router 5, interface 1 (11.2.1.2) is sending hello msg
+Adding neighbor to hello message
+0 neighbor is added out of 0
+
+
+Time 0.0101 ms, Router 5 interface 1 (11.2.1.2) received hello msg from neighbor 11.2.1.1
+0 neighbor is present in hello message
+Neighbor is not found in neighbor list
+Adding new neighbor of RID 11.2.1.1, IP addr 11.2.1.1
+My ip is not present in neighbor list. Set 1-way event & terminating further processing
+
+
+
+Time 0.0101 ms, Router 3 interface 2 (11.2.1.1) received hello msg from neighbor 11.2.1.2
+0 neighbor is present in hello message
+Neighbor is not found in neighbor list
+Adding new neighbor of RID 11.2.1.2, IP addr 11.2.1.2
+My ip is not present in neighbor list. Set 1-way event & terminating further processing
+
+
+
+Scheduling next interval hello timer for router 3-2 at time 10000000.000000
+Time 10000.0000, Router 3, interface 2 (11.2.1.1) is sending hello msg
+Adding neighbor to hello message
+11.2.1.2 neighbor is added
+1 neighbor is added out of 1
+
+
+Scheduling next interval hello timer for router 5-1 at time 10000000.000000
+Time 10000.0000, Router 5, interface 1 (11.2.1.2) is sending hello msg
+Adding neighbor to hello message
+11.2.1.1 neighbor is added
+1 neighbor is added out of 1
+
+
+Time 10000.0104 ms, Router 5 interface 1 (11.2.1.2) received hello msg from neighbor 11.2.1.1
+1 neighbor is present in hello message
+My ip is present in neighbor list. Setting 2-way received event
+
+
+
+Time 10000.0104 ms, Router 3 interface 2 (11.2.1.1) received hello msg from neighbor 11.2.1.2
+1 neighbor is present in hello message
+My ip is present in neighbor list. Setting 2-way received event
+
+
+
+Scheduling next interval hello timer for router 3-2 at time 20000000.000000
+Time 20000.0000, Router 3, interface 2 (11.2.1.1) is sending hello msg
+Adding neighbor to hello message
+11.2.1.2 neighbor is added
+1 neighbor is added out of 1
+
+
+Scheduling next interval hello timer for router 5-1 at time 20000000.000000
+Time 20000.0000, Router 5, interface 1 (11.2.1.2) is sending hello msg
+Adding neighbor to hello message
+11.2.1.1 neighbor is added
+1 neighbor is added out of 1
+
+
+Time 20000.0104 ms, Router 5 interface 1 (11.2.1.2) received hello msg from neighbor 11.2.1.1
+1 neighbor is present in hello message
+My ip is present in neighbor list. Setting 2-way received event
+
+
+
+Time 20000.0104 ms, Router 3 interface 2 (11.2.1.1) received hello msg from neighbor 11.2.1.2
+1 neighbor is present in hello message
+My ip is present in neighbor list. Setting 2-way received event
+
+
+
+Scheduling next interval hello timer for router 3-2 at time 30000000.000000
+Time 30000.0000, Router 3, interface 2 (11.2.1.1) is sending hello msg
+Adding neighbor to hello message
+11.2.1.2 neighbor is added
+1 neighbor is added out of 1
+
+
+Scheduling next interval hello timer for router 5-1 at time 30000000.000000
+Time 30000.0000, Router 5, interface 1 (11.2.1.2) is sending hello msg
+Adding neighbor to hello message
+11.2.1.1 neighbor is added
+1 neighbor is added out of 1
+
+
+Time 30000.0104 ms, Router 5 interface 1 (11.2.1.2) received hello msg from neighbor 11.2.1.1
+1 neighbor is present in hello message
+My ip is present in neighbor list. Setting 2-way received event
+
+
+
+Time 30000.0104 ms, Router 3 interface 2 (11.2.1.1) received hello msg from neighbor 11.2.1.2
+1 neighbor is present in hello message
+My ip is present in neighbor list. Setting 2-way received event
+
+
+
+Scheduling next interval hello timer for router 3-2 at time 40000000.000000
+Time 40000.0000, Router 3, interface 2 (11.2.1.1) is sending hello msg
+Adding neighbor to hello message
+11.2.1.2 neighbor is added
+1 neighbor is added out of 1
+
+
+Scheduling next interval hello timer for router 5-1 at time 40000000.000000
+Time 40000.0000, Router 5, interface 1 (11.2.1.2) is sending hello msg
+Adding neighbor to hello message
+11.2.1.1 neighbor is added
+1 neighbor is added out of 1
+
+
+Time 40000.0104 ms, Router 5 interface 1 (11.2.1.2) received hello msg from neighbor 11.2.1.1
+1 neighbor is present in hello message
+My ip is present in neighbor list. Setting 2-way received event
+
+
+
+Time 40000.0104 ms, Router 3 interface 2 (11.2.1.1) received hello msg from neighbor 11.2.1.2
+1 neighbor is present in hello message
+My ip is present in neighbor list. Setting 2-way received event
+
+
+
+Scheduling next interval hello timer for router 3-2 at time 50000000.000000
+Time 50000.0000, Router 3, interface 2 (11.2.1.1) is sending hello msg
+Adding neighbor to hello message
+11.2.1.2 neighbor is added
+1 neighbor is added out of 1
+
+
+Scheduling next interval hello timer for router 5-1 at time 50000000.000000
+Time 50000.0000, Router 5, interface 1 (11.2.1.2) is sending hello msg
+Adding neighbor to hello message
+11.2.1.1 neighbor is added
+1 neighbor is added out of 1
+
+
+Time 50000.0104 ms, Router 5 interface 1 (11.2.1.2) received hello msg from neighbor 11.2.1.1
+1 neighbor is present in hello message
+My ip is present in neighbor list. Setting 2-way received event
+
+
+
+Time 50000.0104 ms, Router 3 interface 2 (11.2.1.1) received hello msg from neighbor 11.2.1.2
+1 neighbor is present in hello message
+My ip is present in neighbor list. Setting 2-way received event
+
+
+
+Scheduling next interval hello timer for router 3-2 at time 60000000.000000
+Time 60000.0000, Router 3, interface 2 (11.2.1.1) is sending hello msg
+Adding neighbor to hello message
+11.2.1.2 neighbor is added
+1 neighbor is added out of 1
+
+
+Scheduling next interval hello timer for router 5-1 at time 60000000.000000
+Time 60000.0000, Router 5, interface 1 (11.2.1.2) is sending hello msg
+Adding neighbor to hello message
+11.2.1.1 neighbor is added
+1 neighbor is added out of 1
+
+
+Time 60000.0104 ms, Router 5 interface 1 (11.2.1.2) received hello msg from neighbor 11.2.1.1
+1 neighbor is present in hello message
+My ip is present in neighbor list. Setting 2-way received event
+
+
+
+Time 60000.0104 ms, Router 3 interface 2 (11.2.1.1) received hello msg from neighbor 11.2.1.2
+1 neighbor is present in hello message
+My ip is present in neighbor list. Setting 2-way received event
+
+
+
+Scheduling next interval hello timer for router 3-2 at time 70000000.000000
+Time 70000.0000, Router 3, interface 2 (11.2.1.1) is sending hello msg
+Adding neighbor to hello message
+11.2.1.2 neighbor is added
+1 neighbor is added out of 1
+
+
+Scheduling next interval hello timer for router 5-1 at time 70000000.000000
+Time 70000.0000, Router 5, interface 1 (11.2.1.2) is sending hello msg
+Adding neighbor to hello message
+11.2.1.1 neighbor is added
+1 neighbor is added out of 1
+
+
+Time 70000.0104 ms, Router 5 interface 1 (11.2.1.2) received hello msg from neighbor 11.2.1.1
+1 neighbor is present in hello message
+My ip is present in neighbor list. Setting 2-way received event
+
+
+
+Time 70000.0104 ms, Router 3 interface 2 (11.2.1.1) received hello msg from neighbor 11.2.1.2
+1 neighbor is present in hello message
+My ip is present in neighbor list. Setting 2-way received event
+
+
+
+Scheduling next interval hello timer for router 3-2 at time 80000000.000000
+Time 80000.0000, Router 3, interface 2 (11.2.1.1) is sending hello msg
+Adding neighbor to hello message
+11.2.1.2 neighbor is added
+1 neighbor is added out of 1
+
+
+Scheduling next interval hello timer for router 5-1 at time 80000000.000000
+Time 80000.0000, Router 5, interface 1 (11.2.1.2) is sending hello msg
+Adding neighbor to hello message
+11.2.1.1 neighbor is added
+1 neighbor is added out of 1
+
+
+Time 80000.0104 ms, Router 5 interface 1 (11.2.1.2) received hello msg from neighbor 11.2.1.1
+1 neighbor is present in hello message
+My ip is present in neighbor list. Setting 2-way received event
+
+
+
+Time 80000.0104 ms, Router 3 interface 2 (11.2.1.1) received hello msg from neighbor 11.2.1.2
+1 neighbor is present in hello message
+My ip is present in neighbor list. Setting 2-way received event
+
+
+
+Scheduling next interval hello timer for router 3-2 at time 90000000.000000
+Time 90000.0000, Router 3, interface 2 (11.2.1.1) is sending hello msg
+Adding neighbor to hello message
+11.2.1.2 neighbor is added
+1 neighbor is added out of 1
+
+
+Scheduling next interval hello timer for router 5-1 at time 90000000.000000
+Time 90000.0000, Router 5, interface 1 (11.2.1.2) is sending hello msg
+Adding neighbor to hello message
+11.2.1.1 neighbor is added
+1 neighbor is added out of 1
+
+
+Time 90000.0104 ms, Router 5 interface 1 (11.2.1.2) received hello msg from neighbor 11.2.1.1
+1 neighbor is present in hello message
+My ip is present in neighbor list. Setting 2-way received event
+
+
+
+Time 90000.0104 ms, Router 3 interface 2 (11.2.1.1) received hello msg from neighbor 11.2.1.2
+1 neighbor is present in hello message
+My ip is present in neighbor list. Setting 2-way received event
+
+
+

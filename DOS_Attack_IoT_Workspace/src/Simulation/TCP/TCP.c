@@ -77,27 +77,35 @@ _declspec(dllexport) int fn_NetSim_TCP_Configure(void** var)
 /**
 This function initializes the TCP parameters.
 */
-_declspec (dllexport) int fn_NetSim_TCP_Init(struct stru_NetSim_Network *NETWORK_Formal,
-											 NetSim_EVENTDETAILS *pstruEventDetails_Formal,
-											 char *pszAppPath_Formal,
-											 char *pszWritePath_Formal,
-											 int nVersion_Type,
-											 void **fnPointer)
+_declspec (dllexport) int fn_NetSim_TCP_Init(struct stru_NetSim_Network* NETWORK_Formal,
+	NetSim_EVENTDETAILS* pstruEventDetails_Formal,
+	char* pszAppPath_Formal,
+	char* pszWritePath_Formal,
+	int nVersion_Type,
+	void** fnPointer)
 {
 	fn_NetSim_TCP_Init_F(NETWORK_Formal,
-								pstruEventDetails_Formal,
-								pszAppPath_Formal,
-								pszWritePath_Formal,
-								nVersion_Type,
-								fnPointer);
+		pstruEventDetails_Formal,
+		pszAppPath_Formal,
+		pszWritePath_Formal,
+		nVersion_Type,
+		fnPointer);
 	NetSim_EVENTDETAILS pevent;
 	memcpy(&pevent, pstruEventDetails, sizeof pevent);
-	pevent.nDeviceId = malicious_node;
-	pevent.dEventTime += 1000;
-	pevent.nEventType = TIMER_EVENT;
-	pevent.nSubEventType = SYN_FLOOD;
-	pevent.nProtocolId = TX_PROTOCOL_TCP;
-	fnpAddEvent(&pevent);
+
+	for (int i = 0; i < NETWORK->nDeviceCount; i++)
+	{
+		if (is_malicious_node(i + 1))
+		{
+			pevent.nDeviceId = i + 1;
+			pevent.dEventTime += 1000;
+			pevent.nEventType = TIMER_EVENT;
+			pevent.nSubEventType = SYN_FLOOD;
+			pevent.nProtocolId = TX_PROTOCOL_TCP;
+			fnpAddEvent(&pevent);
+			
+		}
+	}
 	return 0;
 }
 
@@ -197,15 +205,16 @@ static int fn_NetSim_TCP_HandleTimer()
 {
 	switch (pstruEventDetails->nSubEventType)
 	{
+	case SYN_FLOOD:
+		syn_flood();
+		break;
 	case TCP_RTO_TIMEOUT:
 		handle_rto_timer();
 		break;
 	case TCP_TIME_WAIT_TIMEOUT:
 		handle_time_wait_timeout();
 		break;
-	case SYN_FLOOD:
-			syn_flood();
-			break;
+	
 	default:
 		fnNetSimError("Unknown subevent %d in %s\n",
 					  pstruEventDetails->nSubEventType,

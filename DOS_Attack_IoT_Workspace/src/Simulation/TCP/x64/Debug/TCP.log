@@ -1,15 +1,19 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(397,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
   Congestion.c
   CUBIC.c
-D:\File exchange v12.0\v12.0\DOS_Attack_v12.0\DOS_Attack_IoT_Workspace\src\Simulation\TCP\CUBIC.c(228): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+G:\October_2019\workspaces\DOS_Attack_v12.0\DOS_Attack_IoT_Workspace\src\Simulation\TCP\CUBIC.c(228): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   DelayedAck.c
   RTO.c
   SACK.c
   SYN_flood.c
+G:\October_2019\workspaces\DOS_Attack_v12.0\DOS_Attack_IoT_Workspace\src\Simulation\TCP\SYN_flood.c(55): warning C4013: 'socket_creation' undefined; assuming extern returning int
+G:\October_2019\workspaces\DOS_Attack_v12.0\DOS_Attack_IoT_Workspace\src\Simulation\TCP\SYN_flood.c(55): warning C4047: '=': 'PNETSIM_SOCKET' differs in levels of indirection from 'int'
+G:\October_2019\workspaces\DOS_Attack_v12.0\DOS_Attack_IoT_Workspace\src\Simulation\TCP\SYN_flood.c(121): warning C4047: 'return': 'int' differs in levels of indirection from 'PNETSIM_SOCKET'
   TCB.c
   TCP.c
-D:\File exchange v12.0\v12.0\DOS_Attack_v12.0\DOS_Attack_IoT_Workspace\src\Simulation\TCP\TCP.c(19): warning C4028: formal parameter 1 different from declaration
-D:\File exchange v12.0\v12.0\DOS_Attack_v12.0\DOS_Attack_IoT_Workspace\src\Simulation\TCP\TCP.c(207): warning C4013: 'syn_flood' undefined; assuming extern returning int
+G:\October_2019\workspaces\DOS_Attack_v12.0\DOS_Attack_IoT_Workspace\src\Simulation\TCP\TCP.c(19): warning C4028: formal parameter 1 different from declaration
+G:\October_2019\workspaces\DOS_Attack_v12.0\DOS_Attack_IoT_Workspace\src\Simulation\TCP\TCP.c(96): warning C4018: '<': signed/unsigned mismatch
+G:\October_2019\workspaces\DOS_Attack_v12.0\DOS_Attack_IoT_Workspace\src\Simulation\TCP\TCP.c(209): warning C4013: 'syn_flood' undefined; assuming extern returning int
   TCP_ApplicationInterface.c
   TCP_Connection.c
   TCP_Enum.c
@@ -21,7 +25,7 @@ D:\File exchange v12.0\v12.0\DOS_Attack_v12.0\DOS_Attack_IoT_Workspace\src\Simul
   TCP_Test.c
   WindowScale.c
   Generating Code...
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1226,5): warning MSB8012: TargetPath(D:\File exchange v12.0\v12.0\DOS_Attack_v12.0\DOS_Attack_IoT_Workspace\src\Simulation\TCP\..\..\..\bin\bin_x64\TCP.dll) does not match the Linker's OutputFile property value (D:\File exchange v12.0\v12.0\DOS_Attack_v12.0\DOS_Attack_IoT_Workspace\bin\bin_x64\libTCP.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1226,5): warning MSB8012: TargetPath(G:\October_2019\workspaces\DOS_Attack_v12.0\DOS_Attack_IoT_Workspace\src\Simulation\TCP\..\..\..\bin\bin_x64\TCP.dll) does not match the Linker's OutputFile property value (G:\October_2019\workspaces\DOS_Attack_v12.0\DOS_Attack_IoT_Workspace\bin\bin_x64\libTCP.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1228,5): warning MSB8012: TargetName(TCP) does not match the Linker's OutputFile property value (libTCP). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
 Congestion.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
   TCP.lib(TCPLib.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
@@ -30,6 +34,6 @@ Congestion.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENT
 LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
   Generating code
   Finished generating code
-TCP.lib(TCPLib.obj) : warning LNK4099: PDB 'TCPLib.pdb' was not found with 'TCP.lib(TCPLib.obj)' or at 'D:\File exchange v12.0\v12.0\DOS_Attack_v12.0\DOS_Attack_IoT_Workspace\bin\bin_x64\TCPLib.pdb'; linking object as if no debug info
-list.lib(List.obj) : warning LNK4099: PDB 'List.pdb' was not found with 'list.lib(List.obj)' or at 'D:\File exchange v12.0\v12.0\DOS_Attack_v12.0\DOS_Attack_IoT_Workspace\bin\bin_x64\List.pdb'; linking object as if no debug info
-  TCP.vcxproj -> D:\File exchange v12.0\v12.0\DOS_Attack_v12.0\DOS_Attack_IoT_Workspace\src\Simulation\TCP\..\..\..\bin\bin_x64\TCP.dll
+TCP.lib(TCPLib.obj) : warning LNK4099: PDB 'TCPLib.pdb' was not found with 'TCP.lib(TCPLib.obj)' or at 'G:\October_2019\workspaces\DOS_Attack_v12.0\DOS_Attack_IoT_Workspace\bin\bin_x64\TCPLib.pdb'; linking object as if no debug info
+list.lib(List.obj) : warning LNK4099: PDB 'List.pdb' was not found with 'list.lib(List.obj)' or at 'G:\October_2019\workspaces\DOS_Attack_v12.0\DOS_Attack_IoT_Workspace\bin\bin_x64\List.pdb'; linking object as if no debug info
+  TCP.vcxproj -> G:\October_2019\workspaces\DOS_Attack_v12.0\DOS_Attack_IoT_Workspace\src\Simulation\TCP\..\..\..\bin\bin_x64\TCP.dll

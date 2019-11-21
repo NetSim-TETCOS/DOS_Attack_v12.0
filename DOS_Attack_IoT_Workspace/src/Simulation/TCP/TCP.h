@@ -52,7 +52,8 @@ extern "C" {
 
 	//Constant
 #define TCP_DupThresh	3
-#define malicious_node 2
+#define NUMBEROFMALICIOUSNODE 2
+	int is_malicious_node(NETSIM_ID devid);
 	//Typedef
 	typedef struct stru_TCP_Socket  NETSIM_SOCKET, *PNETSIM_SOCKET;
 

@@ -28,7 +28,7 @@ extern "C" {
 
 #define ETH_IFG 0.960 //Micro sec
 
-#define Processing_TIME 3000
+#define Processing_TIME 1000
 
 	typedef enum enum_eth_packet
 	{

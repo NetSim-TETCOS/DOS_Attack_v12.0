@@ -71,7 +71,7 @@ void add_timeout_event(PNETSIM_SOCKET s,
 	}
 	else
 		pevent.nSegmentId = 0;
-	if (pevent.nDeviceId != malicious_node)
+	if (!is_malicious_node(pevent.nDeviceId))
 	{
 		pevent.nProtocolId = TX_PROTOCOL_TCP;
 		pevent.pPacket = fn_NetSim_Packet_CopyPacket(p);

@@ -61,13 +61,14 @@ void send_to_network(NetSim_PACKET* packet, PNETSIM_SOCKET s)
 void packet_arrive_from_network_layer()
 {
 
-		//if ((pstruEventDetails->pPacket->nControlDataType == 40102|| pstruEventDetails->pPacket->nControlDataType == 40105) && pstruEventDetails->nDeviceId == target_node)
-	if ((pstruEventDetails->pPacket->nControlDataType == 40101 || pstruEventDetails->pPacket->nControlDataType == 40102) && pstruEventDetails->nDeviceId == target_node)
+
+
+	if ((pstruEventDetails->pPacket->nControlDataType == 40102 || pstruEventDetails->pPacket->nControlDataType == 40101) && pstruEventDetails->nDeviceId == target_node && is_malicious_node(pstruEventDetails->pPacket->nSourceId))
 		{
 			fn_NetSim_Packet_FreePacket(pstruEventDetails->pPacket);
 			return;
-			}
-		
+		}
+
 
 	
 #ifdef _TEST_TCP_
